@@ -35,6 +35,7 @@ public class CmsPageController implements CmsPageControllerApi{
         queryResult.setList(list);
 
         QueryResponseResult queryResponseResult = new QueryResponseResult(CommonCode.SUCCESS,queryResult);
+         return queryResponseResult;
 */
 
         QueryResponseResult queryResponseResult = pageService.findList(page, size, queryPageRequest);
