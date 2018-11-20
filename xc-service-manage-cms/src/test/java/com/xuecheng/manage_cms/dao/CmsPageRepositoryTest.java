@@ -34,9 +34,9 @@ public class CmsPageRepositoryTest {
     }
 
     //添加
+    //添加
     @Test
     public void testInsert(){
-
         //定义实体类
         CmsPage cmsPage = new CmsPage();
         cmsPage.setSiteId("s01");
@@ -49,6 +49,7 @@ public class CmsPageRepositoryTest {
         cmsPageParam.setPageParamValue("value1");
         cmsPageParams.add(cmsPageParam);
         cmsPage.setPageParams(cmsPageParams);
+        cmsPageRepository.save(cmsPage);
         System.out.println(cmsPage);
     }
 
